@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EzFithome</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	width: 1170px;
+	margin: auto;
+
+}	
+body{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Bg2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+#Ezfit{
+	color: white;
+	font-size: 30px;
+	margin-top: 13px;
+	padding: 0px;
+	text-align: left;
+	width: 20%;
+	float: left;
+}
+.nav{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	padding-right: 0px;
+
+}
+.nav li{
+	display: inline-block;
+}
+.nav li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 25px;
+	
+}
+.menu-hamburger {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	width: 35px;
+	display: none;
+}
+.nav li a:hover{
+	background: #fff;
+	color: white;
+	cursor: pointer;
+
+}
+.logo img{
+	width: 130px;
+	float: left;
+	padding-left: 1%;
+	padding-top: 5px;
+}
+.top{
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0% 20%;
+	text-align: center;
+	width: 50%;
+}
+.top h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.top h1{
+	text-align: center;
+	color: #cf321d;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.top video {
+	width: 100%;
+	border: 5px solid white;
+}
+.top a{
+	border: 1px solid white;
+	padding: 15px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	border-radius: 25px;
+}
+.top a:hover{
+	background: white;
+	color: #333;
+}
+.top p{
+	color: white;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding-bottom: 2%;
+}
+.Welcome2{
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0% 20%;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 8%;
+}
+.Welcome2 h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.Welcome2 h1{
+	text-align: center;
+	color: #cf321d;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.about-us2 {
+	display: flex;
+	align-items: center;
+	width: 85%;
+	margin: auto;
+}
+.about-us2 img {
+	flex: 0 50%;
+	width: 40%;
+	height: auto;
+	border: 5px solid white;
+}
+.content2 {
+	padding: 35px;
+}
+.content2 h1 {
+	color: white;
+	font-size: 50px;
+	margin: 15px 0px;
+}
+.content2 p{
+	color: white;
+	font-size: 240%;
+	line-height: 1.5;
+	margin: 15px 0px;
+}
+.content2 .Expect {
+	margin: 5%;
+}
+.Welcome{
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0% 20%;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 8%;
+}
+.Welcome h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.Welcome h1{
+	text-align: center;
+	color: #cf321d;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.about-us {
+	display: flex;
+	align-items: center;
+	width: 85%;
+	margin: auto;
+}
+.about-us img {
+	flex: 0 50%;
+	width: 50%;
+	height: auto;
+}
+.content {
+	padding: 35px;
+}
+.content h1 {
+	color: white;
+	font-size: 40px;
+	margin: 15px 0px;
+}
+.content p{
+	color: white;
+	font-size: 23px;
+	line-height: 1.5;
+	margin: 15px 0px;
+}
+.read-more-btn {
+	display: inline-block;
+	color: white;
+	background-color: #cf321d;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.read-more-btn:hover {
+	background-color: white;
+}
+.Contact{
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0% 20%;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 8%;
+}
+.Contact h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 35px;
+
+}
+.contact-section {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	padding:  0;	
+}
+.card {
+	background: rgba(255, 255, 255, 0.20);
+	padding: 0 20px;
+	margin: 0 10px;
+	width: calc(33% - 20px);
+	height: 275px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 10%;
+	margin-bottom: 15%;
+}
+.card-icon {
+	font-size: 28px;
+	background: #cf321d;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+
+
+.card:hover p{
+	max-height: 40px;
+	opacity: 1;
+}
+@media screen and (max-width: 1200px) {
+		.wrapper {
+			padding: 0;
+		}
+		.menu-hamburger {
+			display: block;
+		}
+		.nav {
+			top: 0;
+			left: 0;
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.20);
+			backdrop-filter: blur(7px);
+			width: 23%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: -100%;
+			transition: all 0.5s ease;
+		}
+		.nav.mobile-menu {
+			margin-left: 0;	
+		}
+		.nav ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		.wrapper .nav ul li {
+			margin: 25px 0;
+			font-size: 1.2em;
+		}
+		.top {
+			padding-top: 13%;
+		}
+		.top video {
+			width: 100%;
+		}
+		.about-us2 {
+			flex-direction: column;
+		}
+		.about-us2 img {
+			flex: 0 100%;
+			width: 100%;
+		}
+		.content2 {
+			flex: 0 100%;
+			max-width: 100%;
+			padding: 15px;
+		}
+		.Welcome {
+			padding-top: 13%;
+		}
+		.Welcome h1 {
+			font-size: 90%;
+		}
+		.about-us {
+			flex-direction: column;
+		}
+		.about-us img {
+			flex: 0 100%;
+			width: 80%;
+		}
+		.content {
+			flex: 0 100%;
+			max-width: 100%;
+			padding: 15px;
+		}
+		.contact-section {
+		flex-direction: column;
+		margin: 0;
+		}
+		.card {
+			width: 100%;
+			max-width: 300px;
+			margin: 10px 0;
+		}
+}		
+</style>
+<body>
+  <header>
+	<div class="wrapper">
+	<div class="logo">
+		<img src="images/Ezfit2.png" alt="Logo">
+	</div>
+	<div id="Ezfit">
+		<h1>EzFit</h1>
+	</div>
+	<nav class="nav ">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="https://forms.gle/azTaJ4Qt16dGvkdw8">REGISTER</a></li>
+		</ul>
+	</nav>	
+	</div>
+	<img src="images/menubar.png" alt="menu hamburger" class="menu-hamburger">
+	<div class="top">
+		<h2>Free Webinar!</h2>
+		<h1>The Ultimate Guide</h1>
+		<p>For People Who Want to Get Fit But Can't Seem to Get Started</p>
+		<div>
+		<video controls autoplay muted loop src="images/video1.mp4">
+		</div>
+		<a href="https://forms.gle/azTaJ4Qt16dGvkdw8">Register Now</a>
+	</div>
+	<div class="Welcome2">
+		<h2>EzFit</h2>
+		<h1>What To Expect:</h1>
+	</div>
+	<section class="about-us2">
+		<img src="images/Webinar.png">
+		<div class="content2">
+			<h1>EzFit</h1>
+			<div class="Expect">
+			<p>* We will introduce our service to you awesome people!</p>
+			</div>
+			<div class="Expect">
+			<p>* We'll discuss our programs so that you can choose what is best for you to execute.</p>
+			</div>
+			<div class="Expect">
+			<p>* Prepare for awesome surprises, gift, vouchers, raffle draw, and giveaways!</p>
+			</div>
+		</div>
+	</section>
+	<div class="Welcome">
+		<h2>about us</h2>
+		<h1>CHOOSE * EXECUTE * THRIVE</h1>
+	</div>
+	<section class="about-us">
+		<img src="images/about.png">
+		<div class="content">
+			<h1>EzFit</h1>
+			<p>At EzFit, we are committed to helping you achieve your health and fitness goals. Our state of the art fitness facility, located in the heart of the city, offers a wide range of fitness classes, personalized training programs, and top-of-the-line equipment to cater to all fitness levels. Our experienced trainers are passionate about fitness and are dedicated to providing you with the guidance, motivation, and support you need to succeed on your fitness journey. Whether you are a beginner or an experienced fitness enthusiast, EzFit is your ultimate destination for a healthy and active lifestyle</p>
+			<button class="read-more-btn">Read More</button>
+		</div>
+	</section>
+	<div class="Contact">
+		<h2>contact us</h2>
+	</div>
+	<center>
+	<div class="contact-section">
+		<div class="card">
+			<i class="card-icon fas fa-map-marker-alt"></i>
+			<p>Address: Iba, Zambales</p>
+		</div>
+		<div class="card">
+			<i class="card-icon fas fa-envelope"></i>
+			<p>Email: EzFit@gmail.com</p>
+		</div>
+		<div class="card">
+			<i class="card-icon fas fa-phone"></i>
+			<p>Contact: +00 0000 000 000<p>
+		</div>
+		<div class="card">
+			<i class="card-icon fas fa-clock"></i>
+			<p>Mon-Fri: 8:00 AM-5:00 PM</p>
+		</div>
+	</div>
+	</center>
+  </header>
+</body>
+<script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</html>
